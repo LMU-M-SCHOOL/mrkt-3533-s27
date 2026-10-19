@@ -222,3 +222,6 @@ __marimo__/
 
 # Plan execution scratch
 .superpowers/
+
+# Teardown drop folder (office agents write here; submit script moves files out)
+submissions/inbox/
