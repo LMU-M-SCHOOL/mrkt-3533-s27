@@ -7,6 +7,7 @@ from __future__ import annotations
 import html
 import json
 import sys
+from datetime import date
 from pathlib import Path
 
 from tools.taste.schema import SCORE_KEYS, Entry, load_entry
@@ -19,7 +20,7 @@ HEADER = ["Published", "Brand", "Maker", "Medium", "Student", "Gate",
 def collect(archive_dir: Path) -> list[Entry]:
     archive_dir = Path(archive_dir)
     entries = [load_entry(p) for p in sorted(archive_dir.rglob("*.md")) if p.name != "index.md"]
-    return sorted(entries, key=lambda e: (e.published or "", e.brand), reverse=True)
+    return sorted(entries, key=lambda e: (e.published or date.min, e.brand), reverse=True)
 
 
 def _class_mean(entry: Entry) -> str:

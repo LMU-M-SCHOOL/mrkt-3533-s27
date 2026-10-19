@@ -74,3 +74,9 @@ def test_html_index_has_filter_controls(three, tmp_path):
     for fid in ("filter-medium", "filter-student", "filter-gate", "filter-month"):
         assert f'id="{fid}"' in html
     assert "<script src=" not in html
+
+
+def test_collect_tolerates_unparseable_published_date(archive: Path):
+    write_entry(archive / "2026" / "a.md")
+    write_entry(archive / "2026" / "b.md", brand="Bad", published="not-a-date")
+    assert len(collect(archive)) == 2

@@ -57,3 +57,18 @@ def test_check_ignores_non_txt_files(tmp_path):
     (tmp_path / ".gitkeep").write_text("")
     (tmp_path / "GL.txt").write_text(lines(15, "2027-01-27"))
     assert check(tmp_path, TERM) == []
+
+
+def test_check_reports_week_with_zero_lines(tmp_path):
+    (tmp_path / "GL.txt").write_text(lines(15, "2027-01-27") + lines(15, "2027-02-10"))
+    assert check(tmp_path, TERM) == ["GL week 3: 0 of 15"]
+
+
+def test_check_first_week_argument_includes_week_one(tmp_path):
+    (tmp_path / "GL.txt").write_text(lines(15, "2027-01-27"))
+    assert check(tmp_path, TERM, first_week=1) == ["GL week 1: 0 of 15"]
+
+
+def test_check_through_week_argument_extends_range(tmp_path):
+    (tmp_path / "GL.txt").write_text(lines(15, "2027-01-27"))
+    assert check(tmp_path, TERM, through=3) == ["GL week 3: 0 of 15"]

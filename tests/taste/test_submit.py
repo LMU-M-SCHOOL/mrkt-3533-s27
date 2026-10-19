@@ -77,3 +77,34 @@ def test_commit_message_has_no_attribution(repo):
     run = FakeRun()
     submit(inbox_entry(repo), repo, run=run)
     assert not any("Co-Authored-By" in part for c in run.calls for part in c)
+
+
+def test_submit_starts_and_ends_on_main(repo):
+    run = FakeRun()
+    submit(inbox_entry(repo), repo, run=run)
+    assert run.calls[0] == ["git", "checkout", "main"]
+    assert run.calls[1] == ["git", "pull", "--ff-only"]
+    assert run.calls[-1] == ["git", "checkout", "main"]
+
+
+class FailingRun(FakeRun):
+    def __call__(self, cmd):
+        if cmd[:3] == ["git", "checkout", "-b"]:
+            raise RuntimeError("fatal: a branch named 'teardown/GL/2026-10-07-visit-sweden' already exists")
+        return super().__call__(cmd)
+
+
+def test_submit_cleans_up_archive_copy_when_git_fails(repo):
+    p = inbox_entry(repo)
+    with pytest.raises(RuntimeError) as exc:
+        submit(p, repo, run=FailingRun())
+    assert "already exists" in str(exc.value)
+    assert not (repo / "taste" / "archive" / "2026" / "2026-10-07-visit-sweden-GL.md").exists()
+    assert p.exists()
+
+
+def test_run_subprocess_surfaces_stderr():
+    from tools.taste.submit import _run_subprocess
+    with pytest.raises(RuntimeError) as exc:
+        _run_subprocess(["git", "no-such-git-command-xyz"])
+    assert "no-such-git-command-xyz" in str(exc.value)

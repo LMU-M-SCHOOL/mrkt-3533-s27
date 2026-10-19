@@ -65,3 +65,16 @@ def test_body_over_800_words_rejected(tmp_path):
 def test_source_url_must_be_http(tmp_path):
     e = errs(tmp_path, source_url="ads.com")
     assert any("source_url" in m for m in e)
+
+
+def test_gate_reason_required(tmp_path):
+    assert any("gate_reason" in m for m in errs(tmp_path, gate_reason=""))
+
+
+def test_maker_required(tmp_path):
+    assert any("maker" in m for m in errs(tmp_path, maker=""))
+
+
+def test_brand_rejects_control_characters(tmp_path):
+    e = errs(tmp_path, brand="Foo\n\nCo-Authored-By: X")
+    assert any("brand" in m and "line" in m for m in e)

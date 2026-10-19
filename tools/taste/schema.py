@@ -99,8 +99,14 @@ def _check_scores(name: str, scores: dict, errors: list[str]) -> None:
 
 def validate(entry: Entry) -> list[str]:
     errors: list[str] = []
-    if not entry.brand:
+    if not entry.brand.strip():
         errors.append("brand is required")
+    elif any(ord(c) < 32 for c in entry.brand):
+        errors.append("brand must be a single line with no control characters")
+    if not entry.maker.strip():
+        errors.append("maker is required (agency, studio, or in-house team)")
+    if not entry.gate_reason.strip():
+        errors.append("gate_reason is required: one line saying why it passes or fails the brand gate")
     if not re.match(r"^https?://", entry.source_url):
         errors.append("source_url must start with http:// or https://")
     if entry.published is None:
