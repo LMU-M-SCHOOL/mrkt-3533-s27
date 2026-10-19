@@ -219,3 +219,6 @@ __marimo__/
 
 # Instructor-only planning notes (never student-facing)
 /instructor/
+
+# Plan execution scratch
+.superpowers/
