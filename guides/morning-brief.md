@@ -7,6 +7,9 @@ matters today. Pick one app, do its four steps, go to bed.
 Stuck at any point? Email gregory.lontok@lmu.edu or book 15 minutes at
 https://calendly.com/greg-lontok. Bring the brief, or the error.
 
+The slides from the course preview are at
+[slides/mrkt-3533-spring-preview-s27.pdf](../slides/mrkt-3533-spring-preview-s27.pdf).
+
 ## First: which account
 
 Use your personal Gmail. Google's connectors work on a personal account

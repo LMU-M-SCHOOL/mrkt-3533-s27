@@ -10,6 +10,8 @@ business, and this repo holds the guides that go with it.
   The setup we showed at the spring course preview: turn off training on
   your data, decide what the agent gets to see, connect your calendar
   and email, then create the brief in Claude or ChatGPT.
+- [The preview slides](slides/mrkt-3533-spring-preview-s27.pdf), six
+  pages, as shown at the spring course preview.
 
 ## Questions
 
