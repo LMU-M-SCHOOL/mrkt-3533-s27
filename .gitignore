@@ -225,3 +225,12 @@ __marimo__/
 
 # Teardown drop folder (office agents write here; submit script moves files out)
 submissions/inbox/
+
+# Course tooling stays local; the public repo carries only README.md and guides/.
+/taste/
+/tests/
+/tools/
+/pytest.ini
+/requirements.txt
+/.github/
+/submissions/

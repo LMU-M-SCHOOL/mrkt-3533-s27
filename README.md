@@ -2,7 +2,7 @@
 
 Course repository for MRKT 3533 at LMU's M-School. Students in this
 course direct AI agents to do real marketing work for a real small
-business, and this repo holds the tools and guides that go with it.
+business, and this repo holds the guides that go with it.
 
 ## Start here
 
@@ -10,8 +10,6 @@ business, and this repo holds the tools and guides that go with it.
   The setup we showed at the spring course preview: turn off training on
   your data, decide what the agent gets to see, connect your calendar
   and email, then create the brief in Claude or ChatGPT.
-- [Teardowns](taste/README.md). The weekly practice of taking a recent
-  piece of marketing work apart the way an Effie judge would.
 
 ## Questions
 
