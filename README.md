@@ -6,7 +6,7 @@ business, and this repo holds the guides that go with it.
 
 ## Start here
 
-- [Set up a morning brief that runs while you sleep](guides/morning-brief.md).
+- [Set up a morning brief](guides/morning-brief.md).
   The setup we showed at the spring course preview: turn off training on
   your data, decide what the agent gets to see, connect your calendar
   and email, then create the brief in Claude or ChatGPT.

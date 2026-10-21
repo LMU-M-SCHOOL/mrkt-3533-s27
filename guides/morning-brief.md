@@ -1,4 +1,4 @@
-# Set up a morning brief tonight
+# Set up a morning brief
 
 Twenty minutes. By tomorrow morning you'll have a brief that reads
 your calendar and your email while you sleep and tells you what
