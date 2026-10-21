@@ -35,7 +35,9 @@ anything new.
 ## ChatGPT
 
 1. Turn off training. Open your profile, then Settings, then Data
-   controls. Turn off "Improve the model for everyone."
+   controls. Turn off "Improve the model for everyone." Otherwise your
+   chats, including what the brief pulls from your inbox, can be used
+   to train OpenAI's models.
    You'll see the switch go grey.
 2. Connect your accounts. Settings, then Apps. Connect Gmail and
    Google Calendar with your personal Gmail. On Google's screen, read
@@ -49,7 +51,9 @@ anything new.
    > short and scannable.
 
    Can't find Scheduled? Use chatgpt.com in a browser.
-   You'll see a task card with a name and a schedule.
+   You'll see a task card with a name and a schedule. Don't wait for
+   morning: open the task's menu (the three dots) and choose Run now
+   to see the first brief tonight.
 4. Turn on notifications. Settings, then Notifications. Pick Push or
    Email, and allow notifications when your phone asks.
    You'll see the brief at 7, or in the morning window on Free.
@@ -60,7 +64,9 @@ can't see your calendar, delete the task and create it again.
 ## Claude
 
 1. Turn off training. Open https://claude.ai/settings/privacy. Turn
-   off "Help improve Claude."
+   off "Help improve Claude." Otherwise your chats, including what the
+   brief pulls from your inbox, can be used to train Anthropic's models
+   and are kept for up to five years.
    You'll see the switch go grey.
 2. Connect your accounts. Open https://claude.ai/customize/connectors.
    Connect Gmail and Google Calendar with your personal Gmail. On
