@@ -1,124 +1,138 @@
-# Set up a morning brief that runs while you sleep
+# Set up a morning brief tonight
 
-A guide for MRKT 3533 students, written October 21, 2026. It walks
-through what we did on stage: a brief that reads your calendar and
-your email every weekday morning and tells you what matters today.
-Twenty minutes to set up, in Claude or in ChatGPT. The order matters.
-Privacy settings come first, then a look at what you are about to
-share, then the connection, then the task.
+Twenty minutes. By tomorrow morning you'll have a brief that reads
+your calendar and your email while you sleep and tells you what
+matters today. Pick one app, do its four steps, go to bed.
 
-## Step 1. Turn off training on your data
+Stuck at any point? Email gregory.lontok@lmu.edu or book 15 minutes at
+https://calendly.com/greg-lontok. Bring the brief, or the error.
 
-Do this before you connect anything. Both apps default to using your
-chats to improve their models. Once a calendar or an inbox is feeding
-those chats, that default covers more than you think.
+## First: which account
 
-Claude: open Settings, then Privacy, and turn off "Help improve
-Claude." The page is at https://claude.ai/settings/privacy. Anthropic
-says it does not train on what the Gmail and Calendar connectors
-retrieve. But anything you paste from them, or that shows up in a
-response, falls under this toggle while it is on. Turning it off also
-drops chat retention from up to five years to thirty days.
+Use your personal Gmail. Google's connectors work on a personal account
+with no one's approval, and your school inbox is where grades,
+financial aid, and health center mail arrive.
 
-ChatGPT: open your account menu, then Settings, then Data controls.
-Turn off "Improve the model for everyone." On the phone app it is
-under your profile icon, then Settings, then Data controls. OpenAI
-says it does not train on data pulled directly from connected Google
-apps. But once that data appears in a response, or you paste it in,
-it can be used for training unless this setting is off. While you are there, look
-at Settings, then Personalization: with Memory on, ChatGPT may keep
-details it learned from your inbox.
+Your classes live in Outlook, so add them to your personal Google
+Calendar tonight, even by hand for this week. The brief is only as
+good as the calendar it reads.
 
-## Step 2. Decide what it gets to see
+You can try your LMU account instead. Both apps connect to Microsoft
+365, but only if LMU's IT has approved the app. If you see "Need admin
+approval," that's university policy, not your mistake. Switch to your
+personal Gmail and move on.
 
-The permission screen is the real scope, and the prompt is a polite
-request. When you connect Gmail, Google asks you to grant access to
-the whole mailbox, not the last two weeks. In both apps the grant
-includes the ability to send or change mail. When you connect
-Calendar, the grant covers every calendar you can see, including
-shared ones, with attendee names and meeting links.
+## Then: which app
 
-Before you click Allow, scan your inbox and calendar for five things:
+- ChatGPT, any plan including Free. Free delivers "in the morning."
+  Plus and Go deliver at the exact time you set.
+- Claude, Pro or above ($20). Exact time, and a template does the
+  setup for you.
+
+Already paying for one of them? Use that one. You won't need to buy
+anything new.
+
+## ChatGPT
+
+1. Turn off training. Open your profile, then Settings, then Data
+   controls. Turn off "Improve the model for everyone."
+   You'll see the switch go grey.
+2. Connect your accounts. Settings, then Apps. Connect Gmail and
+   Google Calendar with your personal Gmail. On Google's screen, read
+   the address at the top before you tap Allow.
+   You'll see both apps marked Connected.
+3. Create the brief. Open Scheduled and paste this:
+
+   > Set up a scheduled task that gives me a morning brief each
+   > weekday at 7am: what's on my calendar, important unread emails or
+   > messages, and anything that needs my attention today. Keep it
+   > short and scannable.
+
+   Can't find Scheduled? Use chatgpt.com in a browser.
+   You'll see a task card with a name and a schedule.
+4. Turn on notifications. Settings, then Notifications. Pick Push or
+   Email, and allow notifications when your phone asks.
+   You'll see the brief at 7, or in the morning window on Free.
+
+Connect the apps before you create the task. If the first brief says it
+can't see your calendar, delete the task and create it again.
+
+## Claude
+
+1. Turn off training. Open https://claude.ai/settings/privacy. Turn
+   off "Help improve Claude."
+   You'll see the switch go grey.
+2. Connect your accounts. Open https://claude.ai/customize/connectors.
+   Connect Gmail and Google Calendar with your personal Gmail. On
+   Google's screen, read the address at the top before you tap Allow.
+   You'll see both marked Connected, with the address beside them.
+3. Create the brief. Open https://claude.ai/scheduled-task?view=templates
+   and pick Daily briefing. Claude writes the task and sets it to
+   weekdays at 8:00. Open the task, click the schedule, change the
+   time, save.
+   Can't find Scheduled? You're on Claude Free, or in the desktop app.
+   Use claude.ai in a browser.
+4. Run it once. Press Run now. The screen shows Running for three to
+   five minutes, and you can close the app and come back.
+   You'll see a notification, and a one-page brief with today's
+   calendar at the top.
+
+## Tomorrow: fix what's wrong
+
+The first brief will be wrong somewhere. It will rank a Handshake
+blast above a professor, or nag you about Thursday on Monday. Open the
+run and tell it what it got wrong, in one sentence. The next morning's
+brief gets closer. After three or four mornings, edit the task itself
+with what you learned: who counts as a real person, what to skip, how
+far ahead to look.
+
+## What it will see
+
+The permission screen is the real scope. Gmail grants the whole
+mailbox, not the last two weeks, and in both apps the grant includes
+sending mail. Calendar grants every calendar you can see, with
+attendee names. The brief only reads, but the grant is bigger than the
+brief.
+
+Before you tap Allow, think about what's in that inbox:
 
 - Other people's information: a group project thread, a roommate's
   lease, a parent's medical update.
-- Anything from a job: an employer's customer list, a manager's
-  forwarded spreadsheet, an internship offer with a salary in it.
-- Money: bank alerts, Venmo and Zelle receipts, tuition statements.
-- Health and identity: appointment reminders, insurance, anything with
-  a Social Security number or a passport in it.
-- Passwords and codes: password reset emails, two-factor codes,
-  account recovery links.
+- Classmates' records, if you're a TA, an RA, or a club officer:
+  grades, rosters, accommodation letters. Those are covered by
+  federal privacy law even in your inbox.
+- Anything from a job: a customer list, a manager's spreadsheet, an
+  offer letter with a salary in it.
+- Money, health, and identity: bank alerts, Venmo receipts, insurance,
+  anything with a Social Security number.
+- Passwords and codes: reset emails, two-factor codes, recovery links.
 
-If one of those is in there, you have three choices. Leave it and
-accept that an agent will read it. Clean it out first, which is a
-good afternoon's work anyway. Or make a separate Google account for
-the brief, forward only the calendar and the mail you want read, and
-connect that. The third option is what I'd pick if a job inbox is
-involved.
+If a lot of that is in there, make a fresh personal Gmail for the
+brief, point your class calendar at it, and connect that instead. Ten
+minutes, and the agent never sees the rest.
 
-Two more habits. Disconnect the app when the semester ends, in Claude
-at https://claude.ai/customize/connectors and in ChatGPT under
-Settings, then Apps. And know that disconnecting does not delete what
-the app already saved in past chats or memories. Delete those
-separately if it matters.
+To cut the agent off later, disconnecting inside Claude or ChatGPT is
+not enough. Go to https://myaccount.google.com/permissions and remove
+the app there. That revokes the grant. What the app already saved in
+past chats stays until you delete those chats.
 
-## Step 3. Connect Google Calendar and Gmail
+## Stuck
 
-Claude: open https://claude.ai/customize/connectors, find Google
-Calendar and Gmail, and connect each with the Google account you
-chose in Step 2. Google's screen will mention sending email. Claude
-asks before each send in a normal chat. In a scheduled task set to
-run without asking, it won't, so keep the task's instructions to
-reading only, which the template already does.
-
-ChatGPT: open Settings, then Apps, and connect Gmail and Google
-Calendar. ChatGPT asks Google for permission to read and modify mail
-and to read and edit calendar events, so the same caution applies.
-
-## Step 4. Create the brief
-
-Claude, on a Pro plan or above: open Scheduled in the left sidebar,
-then Templates, then Daily briefing. Claude writes the task for you
-and sets it to weekdays at 8:00. Open the task, click the schedule,
-change the time to the one you want, and save. Press Run now to see
-the first one. A run takes about four minutes. The result is a
-one-page brief, and you get a notification when it is ready.
-
-ChatGPT, on any plan: open Scheduled and type the sentence we used on
-stage:
-
-> Set up a scheduled task that gives me a morning brief each weekday
-> at 7am: what's on my calendar, important unread emails or messages,
-> and anything that needs my attention today. Keep it short and
-> scannable.
-
-On the free plan the brief arrives "in the morning" rather than at
-7:00. You can have three tasks at a time. Exact times need the Go
-plan.
-
-## Step 5. Iterate with it
-
-The first brief will be wrong somewhere. It will rank a Handshake
-blast above a professor, or tell you to start studying on Monday for
-Thursday's quiz. That is the point of the first week. Open the run,
-tell it what it got wrong in one sentence, and the next morning's
-brief gets closer. After three or four mornings, edit the task's
-instructions with what you learned about who counts as a real person,
-what to skip, and how far ahead to look.
-
-A brief is working when you read it on your phone before you get out
-of bed and nothing in it surprises you by noon.
+Email gregory.lontok@lmu.edu, or book 15 minutes at
+https://calendly.com/greg-lontok. The three things I'll ask: which
+app, which account, and what the screen said.
 
 ## What it costs
 
-| App | Lowest plan with a scheduled brief | Exact-time delivery | Monthly price |
-| --- | --- | --- | --- |
-| Claude | Pro | Yes | $20 |
-| ChatGPT | Free | No, a morning window | $0 |
-| ChatGPT | Go | Yes | $8 |
+| App | Plan | Scheduled brief | Exact-time delivery | Price per month |
+| --- | --- | --- | --- | --- |
+| ChatGPT | Free | Yes | No, a morning window | $0 |
+| ChatGPT | Go | Yes | Yes | $8 |
+| ChatGPT | Plus | Yes | Yes | $20 |
+| Claude | Free | No | | $0 |
+| Claude | Pro | Yes | Yes | $20 |
 
-Prices are United States list prices as of October 2026.
+United States list prices, October 2026.
 
 ## Sources
 
@@ -126,9 +140,13 @@ Prices are United States list prices as of October 2026.
   https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
 - Anthropic, Use Google Workspace connectors:
   https://support.claude.com/en/articles/10166901-use-google-workspace-connectors
+- Anthropic, Connect to Microsoft 365:
+  https://support.claude.com/en/articles/15183774-connect-to-microsoft-365
 - OpenAI, Data controls in ChatGPT:
   https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt
-- OpenAI, Google app data controls FAQ:
-  https://help.openai.com/en/articles/10408842-google-app-data-controls-faq
 - OpenAI, Scheduled tasks in ChatGPT:
   https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt
+- OpenAI, Google app data controls FAQ:
+  https://help.openai.com/en/articles/10408842-google-app-data-controls-faq
+- OpenAI, Outlook Email and Calendar apps in ChatGPT:
+  https://help.openai.com/en/articles/12512241-outlook-email-and-calendar-apps-in-chatgpt
