@@ -234,3 +234,6 @@ submissions/inbox/
 /requirements.txt
 /.github/
 /submissions/
+
+# macOS
+.DS_Store
